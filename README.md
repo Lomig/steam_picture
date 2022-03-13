@@ -37,3 +37,13 @@ yarn install
 yarn build
 yarn build:css
 ```
+
+## Screenshots
+
+### Extension Popup
+
+![Extension Popup](/screenshots/popup.png?raw=true "Extension Popup")
+
+### Generated Picture
+
+![Generated Picture](/screenshots/portal2.png?raw=true "Generated Picture")

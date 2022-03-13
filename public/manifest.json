@@ -1,0 +1,33 @@
+{
+  "name": "Steam Picture",
+  "description": "Get a static logo from Steam",
+  "author": "Lomig Enfroy",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/assets/images/16.png",
+    "32": "/assets/images/32.png",
+    "48": "/assets/images/48.png",
+    "64": "/assets/images/64.png",
+    "128": "/assets/images/128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Steam Picture",
+    "default_icon": {
+      "16": "/assets/images/16.png",
+      "32": "/assets/images/32.png",
+      "48": "/assets/images/48.png",
+      "64": "/assets/images/64.png",
+      "128": "/assets/images/128.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://steamdb.info/*"
+  ]
+}

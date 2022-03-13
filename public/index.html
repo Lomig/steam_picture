@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steam Picture</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-gray-200 text-[#273b4b]">
+    <div class="bg-[#171920] py-4">
+      <h1 class="block font-bold text-white text-lg text-center px-24">Steam Picture</h1>
+    </div>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 m-4">
+      <form action="#">
+        <label for="steam_id" class="block text-gray-700 text-sm font-bold mb-2">SteamDB ID:</label>
+        <div class="flex gap-4">
+          <input id="steam_id" placeholder="Ex: 400 for Portal…" type="text" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          <input type="submit" value="Go!" class="cursor-pointer bg-[#273b4b] hover:bg-[#417a9b] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        </div>
+      </form>
+    </div>
+
+    <div id="button_container" class="flex justify-center px-8 pt-6 pb-8"></div>
+
+    <template id="processing_button_template">
+      <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      Generating image…
+    </template>
+
+
+    <div id="picture_container" class="hidden"></div>
+    
+    <template id="picture_template">
+      <div class="relative w-[1920px]">
+        <img id="picture_background" src="" class="w-full">
+        <div id="logo_container" class="absolute w-full">
+          <img id="picture_logo" class="p-5" src="">
+        </div>
+      </div>
+    </template>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

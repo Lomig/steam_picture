@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CenterCenter {
+    @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center;
+}
+
+.BottomLeft {
+    @apply bottom-0 left-0 flex items-end justify-start;
+}
+
+.TopLeft {
+    @apply top-0 left-0 flex items-start justify-start;
+}
+
+.BottomRight {
+    @apply bottom-0 right-0 flex items-end justify-end;
+}
+
+.TopRight {
+    @apply top-0 right-0 flex items-start justify-end;
+}
+
+.BottomCenter {
+    @apply bottom-0 left-1/2 transform -translate-x-1/2 flex items-end justify-center;
+}
+
+.UpperCenter {
+    @apply top-0 left-1/2 transform -translate-x-1/2 flex items-start justify-center;
+}

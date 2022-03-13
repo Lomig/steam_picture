@@ -1,0 +1,13 @@
+{
+  "name": "steam-picture",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/stylesheets/tailwind.css -o ./public/style.css --minify",
+    "build": "esbuild ./src/javascript/*.js --bundle --minify --outdir=./public/"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.25",
+    "file-saver": "^2.0.5",
+    "tailwindcss": "^3.0.23"
+  }
+}
